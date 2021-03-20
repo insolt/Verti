@@ -5,6 +5,10 @@ header#header {
         div.header_menu {
             position: relative;
             input {
+                @media #{$tabletL},
+                #{$desktop} {
+                    display: none;
+                }
                 position: absolute;
                 opacity: 0;
                 width: 40px;
@@ -13,12 +17,12 @@ header#header {
                 left: 5px;
                 z-index: 10;
                 &:checked {
-                    left: 255px;
+                    left: 305px;
                     width: 100vw;
                     height: 100vh;
                 }
                 &:checked~span {
-                    left: 255px;
+                    left: 305px;
                 }
                 &:checked~nav.header_menu {
                     left: 0;
@@ -28,6 +32,10 @@ header#header {
                 }
             }
             span {
+                @media #{$tabletL},
+                #{$desktop} {
+                    display: none;
+                }
                 position: absolute;
                 background-color: grey;
                 top: 5px;
@@ -47,13 +55,13 @@ header#header {
             }
             nav.header_menu {
                 position: absolute;
-                width: 250px;
-                height: 100vh;
+                font-size: 1.4em;
+                width: 300px;
                 border-right: 1px solid lightgrey;
                 box-shadow: -4px 4px 10px grey;
                 background-color: #fff;
                 top: 0;
-                left: -250px;
+                left: -310px;
                 margin-right: 20px;
                 transition: left .5s ease-in-out;
                 color: gray;
@@ -104,12 +112,17 @@ header#header {
             justify-content: center;
             align-items: center;
             div.logo_description {
-                width: 100%;
-                height: 25vh;
+                width: 90%;
+                height: 250px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media #{$tabletL} {
+                    height: 150px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                }
                 div.logo {
                     display: flex;
                     justify-content: center;
@@ -130,28 +143,47 @@ header#header {
             }
             div.header_bottom {
                 width: 90%;
-                height: 50vh;
                 background-color: #fff;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
+                @media #{$tabletL} {
+                    height: 400px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
                 h1.title {
                     font-weight: 800;
                     margin-bottom: 5px;
                     margin-top: 5vh;
+                    @media #{$tabletP},
+                    #{$tabletL} {
+                        font-size: 4em;
+                    }
                 }
                 p.title_description {
                     font-size: 1.5em;
                     font-weight: 300;
                     text-align: center;
-                    margin-top: 5px;
+                    @media #{$tabletP},
+                    #{$tabletL} {
+                        font-size: 3em;
+                    }
                 }
                 a.standard_link {
                     width: 90%;
                     height: 65px;
                     text-decoration: none;
+                    margin-bottom: 20px;
+                    @media #{$tabletP},
+                    #{$tabletL} {
+                        height: 100px;
+                    }
+                    @media #{$tabletL} {
+                        width: 30%;
+                    }
                     button.standard_btn {
                         width: 100%;
                         height: 100%;
@@ -165,11 +197,25 @@ header#header {
                         font-size: 1.2em;
                         font-weight: 800;
                         color: #fff;
+                        @media #{$tabletP},
+                        #{$tabletL} {
+                            font-size: 2em;
+                        }
+                        @media #{$tabletL} {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            justify-content: space-around;
+                        }
                         svg {
                             width: 30px;
                             height: 30px;
                             color: #fff;
                             padding-right: 10px;
+                            @media #{$tabletP},
+                            #{$tabletL} {
+                                width: 45px;
+                                height: 45px;
+                            }
                         }
                     }
                 }
@@ -177,6 +223,15 @@ header#header {
                     width: 90%;
                     height: 65px;
                     text-decoration: none;
+                    margin-bottom: 20px;
+                    @media #{$tabletP},
+                    #{$tabletL} {
+                        margin-bottom: 40px;
+                        height: 100px;
+                    }
+                    @media #{$tabletL} {
+                        width: 30%;
+                    }
                     button.non_standard_btn {
                         width: 100%;
                         height: 100%;
@@ -190,11 +245,25 @@ header#header {
                         font-size: 1.2em;
                         font-weight: 800;
                         color: #000;
+                        @media #{$tabletP},
+                        #{$tabletL} {
+                            font-size: 2em;
+                        }
+                        @media #{$tabletL} {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            justify-content: space-around;
+                        }
                         svg {
                             width: 30px;
                             height: 30px;
                             color: #000;
                             padding-right: 10px;
+                            @media #{$tabletP},
+                            #{$tabletL} {
+                                width: 45px;
+                                height: 45px;
+                            }
                         }
                     }
                 }

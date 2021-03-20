@@ -1,9 +1,11 @@
-$main-font: "'Open Sans', sans-serif";
-$logo-font: "'Oleo Script', cursive";
+$main-font: 'Open Sans',
+sans-serif;
+$logo-font: 'Oleo Script',
+cursive;
 $bg-color: #E4E4E4;
 $font-color: #444;
 $logo-color: #FC4887;
 $btn-color: #1691C3;
-$tablet-portrait: "only screen and (min-width: 768px) and (max-width: 1023px)";
-$tablet-landscape: "only screen and (min-width: 1024) and (max-width: 1300px)";
-$desctop: "only screen and (min-width: 1301)";
+$tabletP: "screen and (min-width: 768px) and (max-width: 1023px)";
+$tabletL: "screen and (min-width: 1024px) and (max-width: 1300px)";
+$desktop: "screen and (min-width: 1301px)";

@@ -3,25 +3,43 @@ section#interests {
     div.interests {
         width: 90%;
         margin: 0 auto;
+        @media #{$tabletL} {
+            display: flex;
+            flex-direction: row-reverse;
+            @media #{$tabletL} {
+                padding-bottom: 50px;
+            }
+        }
         article.interests_about {
             width: 100%;
             padding: 20px 20px 40px 20px;
             border-bottom: 1px dotted grey;
+            @media #{$tabletL} {
+                border-bottom: none;
+            }
             h3.interests_about_title {
                 font-size: 1.1em;
                 font-weight: 800;
+                @media #{$tabletP} {
+                    font-size: 2em;
+                    margin-top: 50px;
+                }
+                @media #{$tabletL} {
+                    font-size: 2em;
+                }
             }
             p.interests_about_text {
                 font-weight: 300;
                 line-height: 2em;
                 font-size: .9em;
                 margin-bottom: 40px;
+                @media #{$tabletP},
+                #{$tabletL} {
+                    font-size: 1.3em;
+                }
                 a {
                     color: lightblue;
                 }
-            }
-            p.interests_about_text {
-                margin-bottom: 40px;
             }
             a.standard_link {
                 width: 90%;
@@ -39,11 +57,24 @@ section#interests {
                     font-size: 1.2em;
                     font-weight: 800;
                     color: #fff;
+                    @media #{$tabletP},
+                    #{$tabletL} {
+                        font-size: 1.4em;
+                        height: 80px;
+                    }
+                    @media #{$tabletL} {
+                        width: 50%;
+                    }
                     svg {
                         width: 30px;
                         height: 30px;
                         color: #fff;
                         padding-right: 10px;
+                        @media #{$tabletP},
+                        #{$tabletL} {
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
                 }
             }
@@ -51,6 +82,10 @@ section#interests {
         article.interests_stuff {
             width: 100%;
             padding: 20px 20px 40px 20px;
+            @media #{$tabletL} {
+                width: 50%;
+                padding-top: 50px;
+            }
             h3.interests_about_title {
                 font-size: 1.1em;
                 font-weight: 800;
@@ -62,7 +97,7 @@ section#interests {
                 align-items: center;
                 margin-bottom: 30px;
                 img {
-                    width: 48%;
+                    width: 49%;
                     border-radius: 10px;
                     margin-bottom: 10px;
                 }
@@ -83,11 +118,24 @@ section#interests {
                     font-size: 1.2em;
                     font-weight: 800;
                     color: #fff;
+                    @media #{$tabletP},
+                    #{$tabletL} {
+                        font-size: 1.4em;
+                        height: 80px;
+                    }
+                    @media #{$tabletL} {
+                        width: 50%;
+                    }
                     svg {
                         width: 30px;
                         height: 30px;
                         color: #fff;
                         padding-right: 10px;
+                        @media #{$tabletP},
+                        #{$tabletL} {
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
                 }
             }
