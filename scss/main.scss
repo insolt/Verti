@@ -5,3 +5,8 @@
 @import "elements/articles";
 @import "elements/interests";
 @import "elements/footer";
+body {
+    font-family: $main-font;
+    color: $font-color;
+    overflow-y: scroll;
+}

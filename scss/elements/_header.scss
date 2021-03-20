@@ -1,7 +1,7 @@
 header#header {
     width: 100vw;
     div.header_top {
-        max-width: 800px;
+        background-color: rgb(235, 231, 231);
         div.header_menu {
             position: relative;
             input {
@@ -51,6 +51,7 @@ header#header {
                 height: 100vh;
                 border-right: 1px solid lightgrey;
                 box-shadow: -4px 4px 10px grey;
+                background-color: #fff;
                 top: 0;
                 left: -250px;
                 margin-right: 20px;
@@ -95,17 +96,108 @@ header#header {
                 }
             }
         }
-        div.header_bar {}
-        div.logo {}
-        p.logo_description {}
-        div.header_bottom_bar {
-            h1.title {}
-            p.title_description {}
-            button.standard_btn {
-                a.standard_link {}
+        div.header_bar {
+            width: 100vw;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div.logo_description {
+                width: 100%;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div.logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 120px;
+                    height: 50px;
+                    background-color: $logo-color;
+                    font-family: $logo-font;
+                    font-size: 3em;
+                    color: #fff;
+                    border-radius: 7px;
+                }
+                p.description {
+                    margin: 10px;
+                    font-size: .9em;
+                    font-weight: 700;
+                }
             }
-            button.non_standard_btn {
-                a.non_standard_link {}
+            div.header_bottom {
+                width: 90%;
+                height: 50vh;
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                h1.title {
+                    font-weight: 800;
+                    margin-bottom: 5px;
+                    margin-top: 5vh;
+                }
+                p.title_description {
+                    font-size: 1.5em;
+                    font-weight: 300;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+                a.standard_link {
+                    width: 90%;
+                    height: 65px;
+                    text-decoration: none;
+                    button.standard_btn {
+                        width: 100%;
+                        height: 100%;
+                        background-color: $btn-color;
+                        border-radius: 7px;
+                        cursor: pointer;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        font-size: 1.2em;
+                        font-weight: 800;
+                        color: #fff;
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                            color: #fff;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                a.non_standard_link {
+                    width: 90%;
+                    height: 65px;
+                    text-decoration: none;
+                    button.non_standard_btn {
+                        width: 100%;
+                        height: 100%;
+                        background-color: lightgrey;
+                        border-radius: 7px;
+                        cursor: pointer;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        font-size: 1.2em;
+                        font-weight: 800;
+                        color: #000;
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                            color: #000;
+                            padding-right: 10px;
+                        }
+                    }
+                }
             }
         }
     }
