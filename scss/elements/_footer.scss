@@ -5,7 +5,7 @@ footer#footer {
     justify-content: center;
     align-items: center;
     div.footer {
-        width: 85%;
+        width: 90%;
         @media #{$tabletP},
         #{$tabletL},
         #{$desktop} {
@@ -13,12 +13,17 @@ footer#footer {
             justify-content: space-between;
             flex-wrap: wrap;
         }
+        @media #{$tabletL} {
+            width: 1030px;
+            margin: 0 auto;
+        }
         @media #{$desktop} {
-            max-width: 1400px;
+            width: 1300px;
             margin: 0 auto;
         }
         section.footer_links {
             padding: 40px 0;
+            min-width: 320px;
             border-bottom: 1px dotted $font-color;
             @media #{$tabletP} {
                 border-bottom: none;
@@ -27,6 +32,7 @@ footer#footer {
             @media #{$tabletL},
             #{$desktop} {
                 border-bottom: none;
+                min-width: 10px;
                 width: 24%;
             }
             h3.footer_links_title {
@@ -43,6 +49,7 @@ footer#footer {
                 justify-content: flex-start;
                 align-items: flex-start;
                 a.footer_links {
+                    font-size: .9em;
                     line-height: 1.8em;
                     color: $font-color;
                     font-weight: 300;
@@ -54,6 +61,7 @@ footer#footer {
         }
         section.footer_contact {
             padding: 40px 0;
+            min-width: 320px;
             border-bottom: 1px dotted $font-color;
             @media #{$tabletP} {
                 border-bottom: none;
@@ -62,6 +70,7 @@ footer#footer {
             @media #{$tabletL},
             #{$desktop} {
                 border-bottom: none;
+                min-width: 20px;
                 width: 24%;
             }
             h3.footer_links_title {
@@ -73,8 +82,8 @@ footer#footer {
                 a.footer_links {
                     display: inline-block;
                     svg {
-                        width: 40px;
-                        height: 40px;
+                        width: 35px;
+                        height: 35px;
                         color: $font-color;
                     }
                 }
@@ -83,6 +92,7 @@ footer#footer {
                 p {
                     font-style: normal;
                     line-height: 1em;
+                    font-size: .9em;
                     @media #{$tabletP} {
                         line-height: 1.3em;
                     }
@@ -91,6 +101,7 @@ footer#footer {
         }
         section.footer_copyrights {
             padding-bottom: 80px;
+            min-width: 320px;
             @media #{$tabletP} {
                 display: block;
                 width: 100%;
@@ -102,10 +113,10 @@ footer#footer {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                // text-align: center;
             }
             p {
                 line-height: 1em;
+                font-size: .9em;
                 @media #{$tabletL},
                 #{$desktop} {
                     padding: 10px 20px;
