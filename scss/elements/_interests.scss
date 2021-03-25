@@ -3,18 +3,22 @@ section#interests {
     div.interests {
         width: 90%;
         margin: 0 auto;
-        @media #{$tabletL} {
+        @media #{$tabletL},
+        #{$desktop} {
             display: flex;
             flex-direction: row-reverse;
-            @media #{$tabletL} {
-                padding-bottom: 50px;
-            }
+            padding-bottom: 50px;
+        }
+        @media #{$desktop} {
+            max-width: 1400px;
+            margin: 0 auto;
         }
         article.interests_about {
             width: 100%;
             padding: 20px 20px 40px 20px;
             border-bottom: 1px dotted grey;
-            @media #{$tabletL} {
+            @media #{$tabletL},
+            #{$desktop} {
                 border-bottom: none;
             }
             h3.interests_about_title {
@@ -24,7 +28,8 @@ section#interests {
                     font-size: 2em;
                     margin-top: 50px;
                 }
-                @media #{$tabletL} {
+                @media #{$tabletL},
+                #{$desktop} {
                     font-size: 2em;
                 }
             }
@@ -34,7 +39,8 @@ section#interests {
                 font-size: .9em;
                 margin-bottom: 40px;
                 @media #{$tabletP},
-                #{$tabletL} {
+                #{$tabletL},
+                #{$desktop} {
                     font-size: 1.3em;
                 }
                 a {
@@ -58,11 +64,13 @@ section#interests {
                     font-weight: 800;
                     color: #fff;
                     @media #{$tabletP},
-                    #{$tabletL} {
+                    #{$tabletL},
+                    #{$desktop} {
                         font-size: 1.4em;
                         height: 80px;
                     }
-                    @media #{$tabletL} {
+                    @media #{$tabletL},
+                    #{$desktop} {
                         width: 50%;
                     }
                     svg {
@@ -71,7 +79,8 @@ section#interests {
                         color: #fff;
                         padding-right: 10px;
                         @media #{$tabletP},
-                        #{$tabletL} {
+                        #{$tabletL},
+                        #{$desktop} {
                             width: 40px;
                             height: 40px;
                         }
@@ -84,6 +93,10 @@ section#interests {
             padding: 20px 20px 40px 20px;
             @media #{$tabletL} {
                 width: 50%;
+                padding-top: 50px;
+            }
+            @media #{$desktop} {
+                width: 80%;
                 padding-top: 50px;
             }
             h3.interests_about_title {
@@ -119,11 +132,13 @@ section#interests {
                     font-weight: 800;
                     color: #fff;
                     @media #{$tabletP},
-                    #{$tabletL} {
+                    #{$tabletL},
+                    #{$desktop} {
                         font-size: 1.4em;
                         height: 80px;
                     }
-                    @media #{$tabletL} {
+                    @media #{$tabletL},
+                    #{$desktop} {
                         width: 50%;
                     }
                     svg {
@@ -132,7 +147,8 @@ section#interests {
                         color: #fff;
                         padding-right: 10px;
                         @media #{$tabletP},
-                        #{$tabletL} {
+                        #{$tabletL},
+                        #{$desktop} {
                             width: 40px;
                             height: 40px;
                         }

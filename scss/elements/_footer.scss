@@ -7,10 +7,15 @@ footer#footer {
     div.footer {
         width: 85%;
         @media #{$tabletP},
-        #{$tabletL} {
+        #{$tabletL},
+        #{$desktop} {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+        }
+        @media #{$desktop} {
+            max-width: 1400px;
+            margin: 0 auto;
         }
         section.footer_links {
             padding: 40px 0;
@@ -18,6 +23,11 @@ footer#footer {
             @media #{$tabletP} {
                 border-bottom: none;
                 width: 48%;
+            }
+            @media #{$tabletL},
+            #{$desktop} {
+                border-bottom: none;
+                width: 24%;
             }
             h3.footer_links_title {
                 margin-top: 0;
@@ -48,6 +58,11 @@ footer#footer {
             @media #{$tabletP} {
                 border-bottom: none;
                 width: 48%;
+            }
+            @media #{$tabletL},
+            #{$desktop} {
+                border-bottom: none;
+                width: 24%;
             }
             h3.footer_links_title {
                 margin-top: 0;
@@ -81,8 +96,23 @@ footer#footer {
                 width: 100%;
                 text-align: center;
             }
+            @media #{$tabletL},
+            #{$desktop} {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                // text-align: center;
+            }
             p {
                 line-height: 1em;
+                @media #{$tabletL},
+                #{$desktop} {
+                    padding: 10px 20px;
+                    &:not(:last-child) {
+                        border-right: 1px dotted $font-color;
+                    }
+                }
                 a {
                     color: $font-color;
                 }

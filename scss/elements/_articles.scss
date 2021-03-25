@@ -1,7 +1,7 @@
 section#articles {
     width: 100vw;
+    background-color: rgb(235, 231, 231);
     div.articles {
-        background-color: rgb(235, 231, 231);
         width: 100%;
         padding-top: 10px;
         display: flex;
@@ -11,11 +11,17 @@ section#articles {
         @media #{$tabletP} {
             padding-top: 50px;
         }
-        @media #{$tabletL} {
+        @media #{$tabletL},
+        #{$desktop} {
             flex-direction: row;
             justify-content: center;
+            align-items: stretch;
             padding-top: 50px;
             padding-bottom: 50px;
+        }
+        @media #{$desktop} {
+            max-width: 1400px;
+            margin: 0 auto;
         }
         article.article {
             width: 90%;
@@ -23,8 +29,10 @@ section#articles {
             @media #{$tabletP} {
                 margin-bottom: 50px;
             }
-            @media #{$tabletL} {
+            @media #{$tabletL},
+            #{$desktop} {
                 width: 29%;
+                height: 90%;
                 margin: 0 10px;
             }
             img {
@@ -44,7 +52,8 @@ section#articles {
                     @media #{$tabletP} {
                         font-size: 1.6em;
                     }
-                    @media #{$tabletL} {
+                    @media #{$tabletL},
+                    #{$desktop} {
                         font-size: 1.7em;
                     }
                 }
@@ -53,7 +62,8 @@ section#articles {
                     font-weight: 300;
                     margin-top: 0;
                     @media #{$tabletP},
-                    #{$tabletL} {
+                    #{$tabletL},
+                    #{$desktop} {
                         font-size: 1.2em;
                     }
                 }
@@ -65,7 +75,8 @@ section#articles {
                         font-size: 1.2em;
                         line-height: 2em;
                     }
-                    @media #{$tabletL} {
+                    @media #{$tabletL},
+                    #{$desktop} {
                         font-size: 1.2em;
                         line-height: 2em;
                     }
