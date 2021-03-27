@@ -95,9 +95,12 @@
                             width: 750px;
                             left: 540px;
                         }
-                        @media #{$tabletL},
-                        #{$desktop} {
-                            ul.header_menu_list {
+                        ul.header_menu_list {
+                            list-style-type: none;
+                            padding: 0 20px;
+                            margin: 0;
+                            @media #{$tabletL},
+                            #{$desktop} {
                                 margin-top: 25px;
                                 margin-bottom: 0;
                                 padding: 0 0 0 20px;
@@ -110,27 +113,57 @@
                                 justify-content: space-between;
                                 align-items: flex-start;
                                 position: relative;
-                                li.header_menu_list-item {
+                            }
+                            li.header_menu_list-item {
+                                border-bottom: 1px dotted grey;
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+                                @media #{$tabletL},
+                                #{$desktop} {
+                                    border-bottom: none;
                                     height: 100%;
-                                    &:nth-child(2):hover ul.header_menu_sublist {
+                                }
+                                &:nth-child(2):hover ul.header_menu_sublist {
+                                    @media #{$tabletL},
+                                    #{$desktop} {
                                         display: block;
                                     }
-                                    &:first-child a.link_main_menu {
+                                }
+                                &:first-child a.link_main_menu {
+                                    @media #{$tabletL},
+                                    #{$desktop} {
                                         border-radius: 7px;
                                         background-color: $font-color;
                                         color: #fff;
                                     }
-                                    &:not(:first-child):hover>a.link_main_menu {
+                                }
+                                &:not(:first-child):hover>a.link_main_menu {
+                                    @media #{$tabletL},
+                                    #{$desktop} {
                                         border-radius: 7px;
                                         background-color: #fff;
                                     }
-                                    a.link_main_menu {
+                                }
+                                a.link_main_menu {
+                                    text-decoration: none;
+                                    font-size: .7em;
+                                    font-weight: 700;
+                                    color: $font-color;
+                                    @media #{$tabletL},
+                                    #{$desktop} {
+                                        font-size: 1em;
                                         transition: background-color .3s ease-in-out;
                                         padding: 5px 10px;
                                         color: $font-color;
                                         text-decoration: none;
                                     }
-                                    &>ul.header_menu_sublist {
+                                }
+                                &>ul.header_menu_sublist {
+                                    list-style-type: none;
+                                    padding: 0;
+                                    @media #{$tabletL},
+                                    #{$desktop} {
                                         display: none;
                                         position: absolute;
                                         width: 200px;
@@ -155,27 +188,58 @@
                                             top: -8px;
                                             left: 10px;
                                         }
-                                        li.header_menu_sublist-item {
+                                    }
+                                    li.header_menu_sublist-item {
+                                        border-top: 1px dotted grey;
+                                        padding: 0;
+                                        @media #{$tabletL},
+                                        #{$desktop} {
                                             height: 37px;
                                             padding-top: 7px;
-                                            border-bottom: 1px dotted grey;
-                                            &:first-child {
+                                        }
+                                        &:first-child {
+                                            @media #{$tabletL},
+                                            #{$desktop} {
                                                 margin-top: 22px;
+                                                border-top: none;
                                             }
-                                            &:nth-child(3):hover ul.header_menu_sub-sublist {
+                                        }
+                                        &:nth-child(3):hover ul.header_menu_sub-sublist {
+                                            @media #{$tabletL},
+                                            #{$desktop} {
                                                 display: block;
                                             }
-                                            &:hover {
+                                        }
+                                        &:hover {
+                                            @media #{$tabletL},
+                                            #{$desktop} {
                                                 background-color: lightgrey;
-                                                >a.link_sub_menu {}
                                             }
-                                            a.link_sub_menu {
+                                            >a.link_sub_menu {
+                                                @media #{$tabletL},
+                                                #{$desktop} {}
+                                            }
+                                        }
+                                        a.link_sub_menu {
+                                            text-decoration: none;
+                                            font-size: .7em;
+                                            font-weight: 300;
+                                            color: $font-color;
+                                            padding-left: 10px;
+                                            @media #{$tabletL},
+                                            #{$desktop} {
+                                                font-size: 1em;
                                                 padding-left: 30px;
                                                 text-decoration: none;
                                                 color: $font-color;
                                                 display: inline-block;
                                             }
-                                            &>ul.header_menu_sub-sublist {
+                                        }
+                                        &>ul.header_menu_sub-sublist {
+                                            list-style-type: none;
+                                            padding: 0;
+                                            @media #{$tabletL},
+                                            #{$desktop} {
                                                 display: none;
                                                 width: 200px;
                                                 height: 150px;
@@ -188,15 +252,40 @@
                                                 border: 1px dotted grey;
                                                 box-shadow: 0 0 1px grey, .1px .1px 1px grey;
                                                 padding: 0;
-                                                li.header_menu_sub-sublist-item {
+                                            }
+                                            li.header_menu_sub-sublist-item {
+                                                border-top: 1px dotted grey;
+                                                padding-left: 10px;
+                                                @media #{$tabletL},
+                                                #{$desktop} {
                                                     height: 25%;
                                                     padding-top: 7px;
-                                                    border-bottom: 1px dotted grey;
-                                                    &:hover {
-                                                        background-color: lightgrey;
-                                                        >a.link_sub_sub_menu {}
+                                                }
+                                                &:first-child {
+                                                    @media #{$tabletL},
+                                                    #{$desktop} {
+                                                        border-top: none;
                                                     }
-                                                    a.link_sub_sub_menu {
+                                                }
+                                                &:hover {
+                                                    @media #{$tabletL},
+                                                    #{$desktop} {
+                                                        background-color: lightgrey;
+                                                    }
+                                                    >a.link_sub_sub_menu {
+                                                        @media #{$tabletL},
+                                                        #{$desktop} {}
+                                                    }
+                                                }
+                                                a.link_sub_sub_menu {
+                                                    text-decoration: none;
+                                                    font-weight: 300;
+                                                    font-size: .7em;
+                                                    padding-left: 20px;
+                                                    color: $font-color;
+                                                    @media #{$tabletL},
+                                                    #{$desktop} {
+                                                        font-size: 1em;
                                                         display: inline-block;
                                                         padding-left: 30px;
                                                         text-decoration: none;
