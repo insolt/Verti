@@ -130,15 +130,7 @@
                                         display: block;
                                     }
                                 }
-                                &:first-child a.link_main_menu {
-                                    @media #{$tabletL},
-                                    #{$desktop} {
-                                        border-radius: 7px;
-                                        background-color: $font-color;
-                                        color: #fff;
-                                    }
-                                }
-                                &:not(:first-child):hover>a.link_main_menu {
+                                &:not(.active):hover>a.link_main_menu {
                                     @media #{$tabletL},
                                     #{$desktop} {
                                         border-radius: 7px;
@@ -295,6 +287,14 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                            li.active a.link_main_menu {
+                                @media #{$tabletL},
+                                #{$desktop} {
+                                    border-radius: 7px;
+                                    background-color: $font-color;
+                                    color: #fff;
                                 }
                             }
                         }
