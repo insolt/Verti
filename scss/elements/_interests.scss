@@ -25,6 +25,7 @@ section#interests {
             @media #{$tabletL},
             #{$desktop} {
                 border-bottom: none;
+                padding: 20px 20px 40px 20px;
             }
             h2.interests_about_title {
                 font-size: 1.5em;
@@ -118,13 +119,13 @@ section#interests {
             @media #{$tabletL} {
                 width: 40%;
                 padding-top: 50px;
-                padding: 20px 20px 40px 0;
+                padding: 20px 20px 40px 20px;
                 border-bottom: none;
             }
             @media #{$desktop} {
                 width: 40%;
                 padding-top: 50px;
-                padding: 20px 20px 40px 0;
+                padding: 20px 20px 40px 20px;
                 border-bottom: none;
             }
             h3.interests_subheading_title {
