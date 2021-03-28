@@ -289,4 +289,12 @@ section#interests {
             }
         }
     }
+    div.right_sidebar {
+        @media #{$tabletL},
+        #{$desktop} {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 50px;
+        }
+    }
 }
