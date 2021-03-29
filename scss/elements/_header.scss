@@ -37,6 +37,14 @@
                         &:checked~nav.header_menu {
                             transition: left .5s ease-in;
                             left: 0;
+                            @media #{$tabletL} {
+                                transition: none;
+                                left: 340px;
+                            }
+                            @media #{$desktop} {
+                                transition: none;
+                                left: 540px;
+                            }
                         }
                         &:hover {
                             cursor: pointer;
