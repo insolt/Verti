@@ -65,6 +65,46 @@ section#interests {
                     color: lightblue;
                 }
             }
+            a.standard_link {
+                width: 90%;
+                text-decoration: none;
+                button.standard_btn {
+                    width: 100%;
+                    height: 65px;
+                    background-color: $btn-color;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    font-size: 1.2em;
+                    font-weight: 800;
+                    color: #fff;
+                    @media #{$tabletP},
+                    #{$tabletL},
+                    #{$desktop} {
+                        font-size: 1.4em;
+                        height: 80px;
+                    }
+                    @media #{$tabletL},
+                    #{$desktop} {
+                        width: 50%;
+                    }
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                        color: #fff;
+                        padding-right: 10px;
+                        @media #{$tabletP},
+                        #{$tabletL},
+                        #{$desktop} {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
         }
         article.nobar_interests_about {
             width: 100%;
