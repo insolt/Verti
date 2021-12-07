@@ -10,4 +10,4 @@ To test it, you only need to download following files:
  - nosidebar.html
  - css folder with main.css
  
- Or simply click <a href="http://http://insolt.byethost12.com/">HERE...</a>
+ Or simply click <a href="https://http://insolt.byethost12.com/">HERE...</a>
